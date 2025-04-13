@@ -1,0 +1,7 @@
+.headerContainer {
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    color: aliceblue;
+    width: 100%;
+}
