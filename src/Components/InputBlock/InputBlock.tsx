@@ -3,7 +3,11 @@ import "./InputBlock.css"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const InputBlock = () => {
+type InputBlockProps = {
+  hintText: string
+}
+
+const InputBlock: React.FC<InputBlockProps> = ({hintText}) => {
     const navigate = useNavigate();
     const handleSubmit = () => {
         if (!value.trim()) return alert("Please enter your Agent Key");
@@ -25,7 +29,7 @@ const InputBlock = () => {
           onChange={(e) => setValue(e.target.value)}
           required
         />
-        <label htmlFor="agentKey">Agent Key</label>
+        <label htmlFor="agentKey">{hintText}</label>
         <span className="underline" />
       </div>
       <Button text="Submit..." onClick={handleSubmit}/>

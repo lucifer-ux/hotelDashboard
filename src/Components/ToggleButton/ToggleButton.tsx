@@ -1,29 +1,31 @@
 import "./ToggleButton.css";
-import { useState } from "react";
 
 type ComponentAProps = {
   firstToggleText: string;
   secondToggleText: string;
+  onClick: () => void;
+  isToggleButtonActive : boolean;
 };
 
 const ToggleButton = ({
   firstToggleText,
   secondToggleText,
+  onClick,
+  isToggleButtonActive,
 }: ComponentAProps) => {
-  const [isExistingValue, setisExistingValue] = useState<boolean>(false);
   return (
     <>
       <div className="switch-container">
         <div className="switch-button">
           <div
-            className={`switch-option ${!isExistingValue ? "active" : ""}`}
-            onClick={() => setisExistingValue(false)}
+            className={`switch-option ${!isToggleButtonActive ? "active" : ""}`}
+            onClick={onClick}
           >
             {firstToggleText}
           </div>
           <div
-            className={`switch-option ${isExistingValue ? "active" : ""}`}
-            onClick={() => setisExistingValue(true)}
+            className={`switch-option ${isToggleButtonActive ? "active" : ""}`}
+            onClick={onClick}
           >
             {secondToggleText}
           </div>
