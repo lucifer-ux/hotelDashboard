@@ -4,7 +4,7 @@ import SearchTable from "../../Components/SearchTable/SearchTable";
 import ToggleButton from "../../Components/ToggleButton/ToggleButton";
 import UserForm from "../../Components/UserForm/UserForm";
 import "./ProfileUpdateDashboard.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const mockData = [
   { Name: "Alice", ID: "A123", Mobile: "1234567890" },

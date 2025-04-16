@@ -2,14 +2,16 @@ import { useState } from "react";
 import InputBlock from "../../Components/InputBlock/InputBlock";
 import ToggleButton from "../../Components/ToggleButton/ToggleButton";
 import "./LoginForm.css"
+import Navbar from "../../Components/Navbar/Navbar";
 
 const LoginForm = () => {
   const [existingAgentToggle, setExistingAgentToggle] = useState(false)
   const handleToggleClick = () => {
     setExistingAgentToggle(!existingAgentToggle);
-  }
+  }  
   return (
     <>
+    <Navbar/>
     <div className='mainContainer'>
       <div className='leftContainer'>
         Welcome back

@@ -6,7 +6,7 @@
 }
 
 body {
-background-color: rgb(23, 24, 24);;
+background-color: #e6eef3;
 }
 
 .logo {
@@ -42,5 +42,5 @@ background-color: rgb(23, 24, 24);;
 }
 
 .read-the-docs {
-  color: #888;
+  color: #1f1f1f;
 }

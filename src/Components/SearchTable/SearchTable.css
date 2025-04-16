@@ -2,8 +2,9 @@
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    color: #ddd;
+    color: #1f1f1f;
     float: left;
+    max-width: 70%;
   }
   
   .data-table th,
@@ -14,11 +15,11 @@
   }
   
   .data-table th {
-    background-color: #1c1b1b;
+    background-color: #3887dc;
     font-weight: bold;
   } 
   
   .data-table tr:hover {
-    background-color: #3887dc;
+    background-color: #427aa1;
   }
   

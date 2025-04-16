@@ -5,11 +5,8 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    box-shadow: 
-      inset -2px -2px 5px rgba(255, 255, 255, 0.7),
-      inset 2px 2px 5px rgba(0, 0, 0, 0.05),
-      2px 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .leftContainer {
@@ -18,7 +15,7 @@
     justify-content: center;
     width: 45vw;
     height: 45vh;
-    background:  linear-gradient(45deg, #FF6B6B, #FFE66D);
+    background: linear-gradient(45deg, #8396a4, #3b80c8);
     font-size: 2.4rem;
     border-radius: 8px;
     border-radius: 8px 0px 0px 8px;

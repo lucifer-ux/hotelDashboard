@@ -11,10 +11,18 @@ const InputBlock: React.FC<InputBlockProps> = ({hintText}) => {
     const navigate = useNavigate();
     const handleSubmit = () => {
         if (!value.trim()) return alert("Please enter your Agent Key");
+        console.log(value)
         console.log("Submitted agentKey:", value);
         
         navigate('/success');
 
+      };
+    
+      const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          handleSubmit(); // value will be correct
+        }
       };
     
     const [value, setValue] = useState('');
@@ -28,6 +36,7 @@ const InputBlock: React.FC<InputBlockProps> = ({hintText}) => {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           required
+          onKeyDown={handleKeyDown}
         />
         <label htmlFor="agentKey">{hintText}</label>
         <span className="underline" />

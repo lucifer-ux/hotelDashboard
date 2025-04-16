@@ -10,7 +10,7 @@ interface Props {
 }
 
 const SearchTable: React.FC<Props> = ({ data }) => {
-  if (data.length === 0) return <p style={{ textAlign: 'center', color: 'white' }}>No data found.</p>;
+  if (data.length === 0) return <p style={{ textAlign: 'center', color: '#1f1f1f' }}>No data found.</p>;
 
   const headers = Object.keys(data[0]);
 
